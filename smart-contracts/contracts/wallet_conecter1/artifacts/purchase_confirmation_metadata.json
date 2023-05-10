@@ -1,0 +1,163 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "payable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "invalid_state",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "just_cash_provider",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "just_nomada",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "abort",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "cash_provider",
+				"outputs": [
+					{
+						"internalType": "address payable",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "confirm_received",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "confirm_transaction",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "contract_status",
+				"outputs": [
+					{
+						"internalType": "enum purchase_confirmation.state",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "nomada",
+				"outputs": [
+					{
+						"internalType": "address payable",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "pay_cash_provider",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "value1",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"errors": {
+				"invalid_state()": [
+					{
+						"notice": "The function cannot be called at the current state."
+					}
+				],
+				"just_cash_provider()": [
+					{
+						"notice": "Only the cash provider can call this function"
+					}
+				],
+				"just_nomada()": [
+					{
+						"notice": "Only the nomada can call this function"
+					}
+				]
+			},
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/wallet_conecter1/wallet_conecter1.sol": "purchase_confirmation"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/wallet_conecter1/wallet_conecter1.sol": {
+			"keccak256": "0x53220bd04dd54855236f0b28e9ae03b64c571db88b72d9e3112b7bde44f1b642",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f0660828c84b4798f16f88b3992e6e49ba39a032b5f8fe024f5956f88dff02cd",
+				"dweb:/ipfs/QmPDkbYo3H6VkHSBmVoug5rXRFeMJXftNo6WayEh98Yjt8"
+			]
+		}
+	},
+	"version": 1
+}
