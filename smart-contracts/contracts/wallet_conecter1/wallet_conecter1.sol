@@ -20,6 +20,7 @@ contract purchase_confirmation {
     constructor(uint _password) payable {
         nomada = payable(msg.sender);
         password = _password;
+        contract_status = state.created;
     }
 
     /// The function cannot be called at the current state.
@@ -52,7 +53,7 @@ contract purchase_confirmation {
             _;
     }
 
-    function cash_provider_confirm_transaction() external in_state(state.created) only_cash_provider payable {
+    function cash_provider_confirm_transaction() external in_state(state.locked) only_cash_provider payable {
         
         require(msg.value == money_to_change, "Please send the same amount that the nomada, to do change");
         
